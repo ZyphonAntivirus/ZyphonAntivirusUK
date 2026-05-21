@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AntiZyphon — Download</title>
+  <style>
+    :root{--bg:#f4f7fb;--card:#ffffff;--accent:#5b6ee1;--muted:#6b7280}
+    body{margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#24303f}
+    .container{max-width:980px;margin:48px auto;padding:24px}
+    .card{background:var(--card);border-radius:12px;padding:28px;box-shadow:0 6px 18px rgba(36,48,63,0.06)}
+    header{display:flex;gap:18px;align-items:center}
+    .logo{width:68px;height:68px;border-radius:10px;background:linear-gradient(135deg,#6672f0,#4b7be8);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px}
+    h1{margin:0;font-size:22px}
+    p.lead{color:var(--muted);margin:6px 0 18px}
+    .buttons{display:flex;gap:12px;margin-top:16px}
+    .btn{background:var(--accent);color:white;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:600}
+    .btn.secondary{background:#eef2ff;color:var(--accent);border:1px solid rgba(91,110,225,0.12)}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:20px}
+    .feature{background:#fbfcff;padding:12px;border-radius:8px;border:1px solid #f1f4fb;color:#2f3b54}
+    footer{margin-top:18px;color:var(--muted);font-size:13px}
+    @media (max-width:520px){.logo{width:56px;height:56px;font-size:22px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="logo">AZ</div>
+        <div>
+          <h1>AntiZyphon</h1>
+          <p class="lead">Lightweight scanner for Minecraft mods — detects suspicious classes, keywords and heuristics.</p>
+        </div>
+      </header>
+
+      <div class="buttons">
+        <a class="btn" href="releases/AntiZyphon-latest.zip" download>Download (ZIP)</a>
+        <a class="btn secondary" href="https://github.com/" target="_blank" rel="noopener">Source (GitHub)</a>
+      </div>
+
+      <section class="features" aria-label="Features">
+        <div class="feature">
+          <strong>Quick & Deep Scan</strong>
+          <div style="color:var(--muted);font-size:13px;margin-top:6px">Choose fast heuristics or more thorough class analysis.</div>
+        </div>
+        <div class="feature">
+          <strong>Safe Extraction</strong>
+          <div style="color:var(--muted);font-size:13px;margin-top:6px">Extracts JAR contents into a temporary folder for inspection.</div>
+        </div>
+        <div class="feature">
+          <strong>Portable</strong>
+          <div style="color:var(--muted);font-size:13px;margin-top:6px">Single-file ZIP or executable — no installer required.</div>
+        </div>
+      </section>
+
+      <hr style="margin-top:20px;border:none;border-top:1px solid #eef2f7">
+
+      <div>
+        <h3 style="margin:8px 0">Install & Run</h3>
+        <ol style="color:var(--muted)">
+          <li>Download the ZIP and extract it to a folder.</li>
+          <li>Run the bundled executable or `python index.py` to start the UI.</li>
+          <li>Place Minecraft mods into the <code>uploads/</code> folder or use the Upload button in-app.</li>
+        </ol>
+      </div>
+
+      <footer>
+        <div>Built by AntiZyphon team. Update the download link in <strong>download.html</strong> to point to your release artifacts.</div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
