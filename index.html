@@ -1,66 +1,89 @@
-<html lang="en"><head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>AntiZyphon — Download</title>
-  <style>
-    :root{--bg:#f4f7fb;--card:#ffffff;--accent:#5b6ee1;--muted:#6b7280}
-    body{margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#24303f}
-    .container{max-width:980px;margin:48px auto;padding:24px}
-    .card{background:var(--card);border-radius:12px;padding:28px;box-shadow:0 6px 18px rgba(36,48,63,0.06)}
-    header{display:flex;gap:18px;align-items:center}
-    .logo{width:68px;height:68px;border-radius:10px;background:linear-gradient(135deg,#6672f0,#4b7be8);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px}
-    h1{margin:0;font-size:22px}
-    p.lead{color:var(--muted);margin:6px 0 18px}
-    .buttons{display:flex;gap:12px;margin-top:16px}
-    .btn{background:var(--accent);color:white;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:600}
-    .btn.secondary{background:#eef2ff;color:var(--accent);border:1px solid rgba(91,110,225,0.12)}
-    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:20px}
-    .feature{background:#fbfcff;padding:12px;border-radius:8px;border:1px solid #f1f4fb;color:#2f3b54}
-    footer{margin-top:18px;color:var(--muted);font-size:13px}
-    @media (max-width:520px){.logo{width:56px;height:56px;font-size:22px}}
-  </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AntiZyphon - Minecraft Security</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <div class="card">
-      <header>
-        <div class="logo">AZ</div>
-        <div>
-          <h1>AntiZyphon</h1>
-          <p class="lead">Lightweight scanner for Minecraft mods — detects suspicious classes, keywords and heuristics.</p>
+
+    <header class="app-banner">
+        <div class="banner-content">
+            <div class="brand-identity">
+                <img src="icon.png" alt="AntiZyphon Logo" class="app-icon">
+                <div class="text-group">
+                    <h1 class="app-title">Zyphon Antivirus</h1>
+                    <p class="app-subtitle">The best Minecraft malware scanner</p>
+                </div>
+            </div>
+            
+            <div class="header-actions">
+                <a href="donate.html" class="btn btn-donate">
+                    <span>❤️</span> Donate
+                </a>
+            </div>
         </div>
-      </header>
+    </header>
 
-      <div class="buttons">
-        <a class="btn" href="https://github.com/ZyphonAntivirus/ZyphonAntivirusUK/raw/refs/heads/main/Zyphon%201.0.0.zip" target="_blank" rel="noopener">Download (ZIP)</a>
-      </div>
+    <div class="container">
+        <main class="app-window animate-fade-in">
+            
+            <div class="section-title">Core Security Features</div>
+            
+            <div class="button-stack">
+                <div class="app-feature-step">
+                    <button class="btn btn-blue" disabled>
+                        Cross-Referencing Threat Signatures
+                    </button>
+                    <p class="feature-desc">Matches files against a massive database of known Minecraft malware, rats, and token grabbers.</p>
+                </div>
 
-      <section class="features" aria-label="Features">
-        <div class="feature">
-          <strong>Quick &amp; Deep Scan</strong>
-          <div style="color:var(--muted);font-size:13px;margin-top:6px">Choose fast heuristics or more thorough class analysis.</div>
-        </div>
-        <div class="feature">
-          <strong>Safe Extraction</strong>
-          <div style="color:var(--muted);font-size:13px;margin-top:6px">Extracts JAR contents into a temporary folder for inspection.</div>
-        </div>
-      </section>
+                <div class="app-feature-step">
+                    <button class="btn btn-light" disabled>
+                        Decompiling & Analyzing Java Bytecode
+                    </button>
+                    <p class="feature-desc">Breaks down .jar files instantly to check for hidden malicious code before you load them.</p>
+                </div>
 
-      <hr style="margin-top:20px;border:none;border-top:1px solid #eef2f7">
+                <div class="app-feature-step">
+                    <button class="btn btn-light" disabled>
+                        Intercepting Hidden Network URLs
+                    </button>
+                    <p class="feature-desc">Dynamically runs inside of Zyphon Sandbox to check for any URL requests or webhooks.</p>
+                </div>
 
-      <div>
-        <h3 style="margin:8px 0">Install &amp; Run</h3>
-        <ol style="color:var(--muted)">
-          <li>Download the ZIP and extract it to a folder.</li>
-          <li>Run the bundled executable or `python index.py` to start the UI.</li>
-          <li>Place Minecraft mods into the <code>uploads/</code> folder or use the Upload button in-app.</li>
-        </ol>
-      </div>
+                <div class="app-feature-step">
+                    <button class="btn btn-light" disabled>
+                        Isolating in Zyphon Sandbox
+                    </button>
+                    <p class="feature-desc">Runs files inside an isolated, virtual environment so threats can never reach your actual PC operating system.</p>
+                </div>
 
-      <footer>
-        <div>Built by AntiZyphon team. Update the download link in <strong>download.html</strong> to point to your release artifacts.</div>
-      </footer>
+                <div class="download-wrapper">
+                    <a href="#" class="btn btn-green btn-large animate-pulse">
+                        Download Zyphon Antivirus
+                    </a>
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <div class="section-title">Scan Results & Live Performance</div>
+            
+            <div class="features-grid">
+                <div class="info-card">
+                    <h4>98% Detection Rate</h4>
+                    <p>Advanced heuristic analysis designed explicitly to catch edge-case exploits and hidden token stealers inside mods.</p>
+                </div>
+                <div class="info-card">
+                    <h4>Zyphon Sandbox</h4>
+                    <p>Isolate and run suspicious .jar clients securely inside an automated, locked-down virtual wrapper before putting them near your system files.</p>
+                </div>
+            </div>
+        </main>
     </div>
-  </div>
 
-</body></html>
+</body>
+</html>
